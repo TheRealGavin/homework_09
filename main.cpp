@@ -45,10 +45,10 @@ int main() {
 // fill the primitive types within that struct while prompting the
 // user for information
 void get_player_average(player *player_info){
-  std::cout << "Enter the player's name ";
+  std::cout << "\nEnter the player's name: ";
   std::cin >> (player_info->name);
 
-  std::cout << "Enter the player's average " << std::endl;
+  std::cout << "\nEnter the player's average: ";
   std::cin >> player_info->average;
 }
 
@@ -56,6 +56,6 @@ void get_player_average(player *player_info){
 // This struct is passed the player struct and prints the individual data
 // from the struct within a cout statement
 void print_player_average(player player_info){
-  std::cout << player_info.name << " is hitting " << player_info.average
+  std::cout << "\n" << player_info.name << " is hitting " << player_info.average
   << std::endl;
 }
