@@ -27,16 +27,14 @@ int main() {
   // Call the player struct, defining it as an array
   // and pass through it the const containing an integer
   // of the number of players
-  player player_information[kNumberOfPlayers];
+  player player_information;
 
-  // Utilize a for loop to move through the # of players
-  for(int i = 0; i < kNumberOfPlayers; ++i) {
     // Call the get_player_average and print_player_average
     // functions while passing them an array of player_information
     // with the array size being defined by a const integer
-    get_player_average(&player_information[kNumberOfPlayers]);
-    print_player_average(player_information[kNumberOfPlayers]);
-  }
+    get_player_average(&player_information);
+    print_player_average(player_information);
+
   return 0;
 }
 
